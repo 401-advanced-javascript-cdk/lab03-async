@@ -10,6 +10,7 @@ let files = process.argv.slice(2);
 if( ! (files instanceof Array && files.length) ) {
   throw new Error('Invalid Args');
 }
+console.log('Arguments received,', files);
 
 fileReader(files, (err,data) => {
   if ( err ) { 
